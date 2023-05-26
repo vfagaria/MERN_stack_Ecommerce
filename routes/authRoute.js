@@ -44,7 +44,7 @@ router.get('/orders', requireSignIn, getOrdersController)
 router.get('/all-orders', requireSignIn, isAdmin, getAllOrdersController)
 
 //order status updata
-router.push('/order-status/:orderID', requireSignIn, isAdmin, orderStatusController)
+router.put('/order-status/:orderID', requireSignIn, isAdmin, orderStatusController)
 
 //test routes
 router.get('/test', requireSignIn, isAdmin, testController)
