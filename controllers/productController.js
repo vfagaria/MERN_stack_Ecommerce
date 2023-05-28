@@ -202,7 +202,7 @@ export const productFiltersController = async (req, res) => {
     const products = await productModel.find(args);
     res.status(200).send({
       success: true,
-     roducts,
+     products,
     }); 
   } catch (error) {
     console.log(error);
